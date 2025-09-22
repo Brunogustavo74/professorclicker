@@ -21,15 +21,32 @@ header {
     width: 100%;
     height: 75px;
     display: flex;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    justify-content: center;
+    justify-content: space-between; /* espaço entre título e perfil */
     align-items: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
     margin-bottom: 2%;
     border-top: 3px solid #38bdf8;
+    color: #fff;
+    padding: 0 20px;
 }
 
 header h1 {
-    color: #fff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.profile {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #38bdf8;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile:hover {
+    transform: scale(1.05);
 }
 
 .container {
@@ -41,12 +58,19 @@ header h1 {
     padding-right: 0;
 }
 
+#click {
+    box-shadow: rgb(0, 136, 255) 3px 3px 6px 0px inset,
+        rgba(255, 0, 0, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 30px;
+}
+
 #click:hover,
 .icon:hover {
     cursor: pointer;
 }
 
 #cabibara_img {
+    border-radius: 30px;
     width: 300px;
     height: 300px;
 }
@@ -83,6 +107,27 @@ header h1 {
     animation: scorePop 0.1s ease forwards;
 }
 
+#click.popp {
+    animation: scorePopp 0.3s ease forwards;
+}
+
+@keyframes scorePopp {
+    0% {
+        transform: scale(1);
+        color: #38bdf8;
+    }
+
+    50% {
+        transform: scale(0.95);
+        color: #22c55e;
+    }
+
+    100% {
+        transform: scale(1);
+        color: #38bdf8;
+    }
+}
+
 @keyframes scorePop {
     0% {
         transform: scale(1);
@@ -90,7 +135,7 @@ header h1 {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(0.5);
         color: #22c55e;
     }
 
@@ -105,7 +150,7 @@ header h1 {
     bottom: 20px;
     left: 20px;
     padding: 12px 18px;
-    background: linear-gradient(145deg, #e94560, #ff2e63);
+    background: linear-gradient(135deg, #1e293b, #0f172a);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -127,7 +172,7 @@ header h1 {
     bottom: 20px;
     right: 20px;
     padding: 12px 18px;
-    background: #b91c1c;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -152,14 +197,18 @@ header h1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: center;
     position: absolute;
-    top: -100%;
+    top: -150%;
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: center;
     transition: top 1s ease;
+    z-index: 10;
 }
 
 .leaderboard.show {
-    top: 70px;
-    left: 70px;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .leaderboard h2 {
@@ -195,16 +244,17 @@ header h1 {
     color: black;
     position: relative;
     box-shadow: 0 0 10px gold, 0 0 20px orange;
-    animation: neonPulseGold 1s alternate infinite;
+    animation: neonPulseGold 1s ease-out infinite;
 }
 
 .leaderboard li:nth-child(1)::before,
 .leaderboard li:nth-child(1)::after {
     content: "🏆";
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-40%);
     font-size: 1.3rem;
+    animation-delay: 1.2s;
     animation: swing 1s infinite;
 }
 
@@ -220,8 +270,9 @@ header h1 {
     background: silver;
     color: black;
     position: relative;
+    animation-delay: 1.5s;
     box-shadow: 0 0 10px silver, 0 0 20px #aaa;
-    animation: neonPulseSilver 1.5s alternate infinite;
+    animation: neonPulseSilver 1.5s ease-in infinite;
 }
 
 .leaderboard li:nth-child(2)::before,
@@ -246,72 +297,62 @@ header h1 {
     background: #cd7f32;
     color: black;
     position: relative;
+    animation-delay: 1.8s;
     box-shadow: 0 0 10px #cd7f32, 0 0 20px #a0522d;
-    animation: neonPulseBronze 1.5s alternate infinite;
+    animation: neonPulseBronze 1.5s ease-in-out infinite;
 }
 
 .leaderboard li:nth-child(3)::before,
 .leaderboard li:nth-child(3)::after {
     content: "🥉";
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-40%);
     font-size: 1.2rem;
     animation: swing 1s infinite;
 }
 
-@keyframes neonPulseGold {
+.leaderboard li:nth-child(3)::before {
+    left: -25px;
+}
 
-    0%,
-    100% {
+.leaderboard li:nth-child(3)::after {
+    right: -25px;
+}
+
+@keyframes neonPulseGold {
+    0%, 100% {
         box-shadow: 0 0 10px gold, 0 0 20px orange;
     }
-
     50% {
         box-shadow: 0 0 20px gold, 0 0 30px orange;
     }
 }
 
 @keyframes neonPulseSilver {
-
-    0%,
-    100% {
-        box-shadow: 0 0 10px silver, 0 0 20px #aaa;
+    0%, 100% {
+        box-shadow: 0 0 5px silver, 0 0 10px #aaa;
     }
-
     50% {
-        box-shadow: 0 0 20px silver, 0 0 30px #ccc;
+        box-shadow: 0 0 10px silver, 0 0 17px #ccc;
     }
 }
 
 @keyframes neonPulseBronze {
-
-    0%,
-    100% {
-        box-shadow: 0 0 10px #cd7f32, 0 0 20px #a0522d;
+    0%, 100% {
+        box-shadow: 0 0 5px #cd7f32, 0 0 10px #a0522d;
     }
-
     50% {
-        box-shadow: 0 0 20px #cd7f32, 0 0 30px #d2691e;
+        box-shadow: 0 0 10px #cd7f32, 0 0 15px #d2691e;
     }
 }
 
 @keyframes swing {
-    0% {
-        transform: rotate(-20deg);
-    }
-
-    50% {
-        transform: rotate(20deg);
-    }
-
-    75% {
-        transform: rotate(-20deg);
-    }
-
-    100% {
-        transform: rotate(20deg);
-    }
+    0% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    70% { transform: rotate(-20deg); }
+    85% { transform: rotate(20deg); }
+    100% { transform: rotate(-20deg); }
 }
 
 .menu-toggle {
@@ -330,16 +371,7 @@ header h1 {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.menu-toggle::before {
-    transform: rotate(90deg);
-    content: "\1F6D2";
-}
 
-.menu-toggle.active::before {
-    content: "\2716";
-    transform: rotate(90deg);
-    color: #fca5a5;
-}
 
 .store {
     position: fixed;
@@ -472,14 +504,52 @@ header h1 {
         transform: scale(1);
         box-shadow: 0 0 0 rgba(56, 189, 248, 0.6);
     }
-
     50% {
         transform: scale(1.05);
         box-shadow: 0 0 20px rgba(56, 189, 248, 0.9);
     }
-
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 rgba(56, 189, 248, 0.6);
     }
 }
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    width: auto;
+    border-radius: 20px;
+  }
+  
+  .profile-user {
+    font-size: 20px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+  }
+  
+  .h1 {
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px; 
+    color: #fff;
+  }
+
+  .store {
+    z-index: 9; 
+}
+
+  
