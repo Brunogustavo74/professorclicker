@@ -9,10 +9,11 @@ const store = document.getElementById("store");
 const professores = {
     tetimulher: { nome: "Teti Mulher", preco: 50, bonus: 2, img: "assets/cabibara_1.png", background: "url('assets/cozinha.webp')" },
     tetianao: { nome: "Teti Anão", preco: 300, bonus: 3, img: "assets/cabibara_2.png", background: "url('assets/anao.webp')" },
-    tetisupremo: { nome: "Teti Supremo", preco: 1500, bonus: 6, img: "assets/cabibara_3.jpg", background: "url('assets/sala.jpg')" },
-    FelipeBase: { nome: "Felipe", preco: 2500, bonus: 7, img: "assets/FelipeBase.jpeg", background: "url('assets/Fisica.jpg')" },
-    silviogoat: { nome: "Silvio Goat", preco: 5000, bonus: 9, img: "assets/Silviogoat.jpeg", background: "url('assets/ibura.jpg')" },
-    silviofurry: { nome: "Silvio Furry", preco: 10000, bonus: 14, img: "assets/silviogoatfurry.png", background: "url('assets/academia.jpg')" },
+    tetisupremo: { nome: "Teti Supremo", preco: 1500, bonus: 5, img: "assets/cabibara_3.jpg", background: "url('assets/sala.jpg')" },
+    FelipeBase: { nome: "Felipe O Físico", preco: 2500, bonus: 9, img: "assets/FelipeBase.jpeg", background: "url('assets/Fisica.jpg')" },
+ Richardson: { nome: "Master Rick", preco: 7500, bonus: 11, img: "assets/Richardson.png", background: "url('assets/Program.jpeg')" },
+    silviogoat: { nome: "Silvio Goat", preco: 10000, bonus: 13, img: "assets/Silviogoat.jpeg", background: "url('assets/ibura.jpg')" },
+    silviofurry: { nome: "Silvio Furry", preco: 50000, bonus: 17, img: "assets/silviogoatfurry.png", background: "url('assets/academia.jpg')" },
     silviofurryshiny: { nome: "Silvio Furry Shiny", preco: 100000000000000, bonus: 99999, img: "assets/silviofurryshiny.png", background: "url('assets/City.jpg')" }
 };
 
