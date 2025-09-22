@@ -37,7 +37,7 @@ function saveNickname() {
 }
 
 function saveUser(nickname) {
-    return fetch("https://professorclicker-api.vercel.app/api/", {
+    return/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: nickname })
