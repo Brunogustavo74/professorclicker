@@ -35,7 +35,7 @@ function saveScore() {
 }
 
 function saveScoreInDB() {
-    fetch(`https://professorclicker-api.vercel.app/api/${session}`, {
+    fetch(`/${session}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ score: i })
