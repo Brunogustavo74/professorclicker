@@ -3,212 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airpods</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
-    
-<header>
-    <div class="logo">Bruninho quebra codigos</div>
-    <nav>
-        <a href="">Home</a>
-        <a href="">Info</a>
-        <a href="">Contato</a>
-    </nav>
-</header>
 
-<div class="carousel">
-    <div class="list">
+    <header>
+        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">Bruno</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Início</a>
+            <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Sobre</a>
+            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Habilidades</a>
+            <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Serviços</a>
+            <a href="#work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Trabalhos</a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contato</a>
+        </div>
+    </header>
 
-        <!-- AIRPOD 1 -->
-        <div class="item">
-            <img src="css/img1.png">
-            <div class="introduce">
-                <div class="title">Airpod 1</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                </div>
-                <button class="seeMore">Ver mais &#8599;</button>
+    <section class="main" id="main">
+        <div class="content">
+            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Olá, eu sou<br><span>Bruno Gustavo</span></h2>
+            <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                <h3>Desenvolvedor Web</h3>
+                <h3>Designer Web</h3>
+                <h3>Programador</h3>
             </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+            <a href="#" class="btn" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">Ver meus trabalhos</a>
+            <div class="media-icons">
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1300"><i class="fab fa-instagram"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400"><i class="fab fa-twitter"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1500"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+
+    <section class="about" id="about">
+        <div class="title reveal">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Sobre mim</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left reveal">
+                <div class="img-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="/img1.jpg" alt="">
                 </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
+            </div>
+            <div class="column col-right reveal">
+                <h2 class="content-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Olá! Eu sou Bruno</h2>
+                <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="600">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades -->
+
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Minhas Habilidades</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left">
+                <h2 class="content-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Minhas Habilidades e Experiências</h2>
+                <div class="paragraph-text" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
+                <a href="#" class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400">Ver mais</a>
+            </div>
+            <div class="column col-right">
+                <div class="bar">
+                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="line html" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="140"></div>
+                </div>
+                <div class="bar">
+                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line css" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="240"></div>
+                </div>
+                <div class="bar">
+                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                        <span>Javascript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line javascript" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="340"></div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- AIRPOD 2 -->
-        <div class="item">
-            <img src="css/img2.png">
-            <div class="introduce">
-                <div class="title">Airpod 2</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+    <!-- Seção de Serviços -->
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Meus Serviços</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="content">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
                 </div>
-                <button class="seeMore">Ver mais &#8599;</button>
+                <div class="info">
+                    <h3>Design Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+      
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-file-code"></i>
                 </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
-                </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
+                <div class="info">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- AIRPOD 3 -->
-        <div class="item">
-            <img src="css/img3.jpg">
-            <div class="introduce">
-                <div class="title">Airpod 3</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+    <!-- Seção de Trabalhos -->
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Meus Trabalhos</h2>
+        </div>
+        <div class="content">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                  <a href="#">  <img src="Image/work1.jpg" alt=""></a>
                 </div>
-                <button class="seeMore">Ver mais &#8599;</button>
             </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                  <a href="#">  <img src="Image/work2.jpg" alt=""></a>
                 </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                 <a href="professorclicker.site">  <img src="Image/work3.jpg" alt=""></a>
                 </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
-                </div>
+            </div>
+        
             </div>
         </div>
+    </section>
 
-        <!-- AIRPOD 4 -->
-        <div class="item">
-            <img src="css/img4.png">
-            <div class="introduce">
-                <div class="title">Airpod 4</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                </div>
-                <button class="seeMore">Ver mais &#8599;</button>
-            </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
-                </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
-                </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
-                </div>
-            </div>
+    <!-- Seção de Contato -->
+
+    <section class="contact" id="contact">
+        <div class="title reveal">
+          <h2 class="section-title">Contate-me</h2>
         </div>
-
-        <!-- AIRPOD 5 -->
-        <div class="item">
-            <img src="css/img5.png">
-            <div class="introduce">
-                <div class="title">Airpod 5</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                </div>
-                <button class="seeMore">Ver mais &#8599;</button>
+        <div class="content">
+          <div class="row">
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info">
+                <h3>Endereço</h3>
+                <span>Brasil, Recife</span>
+              </div>
             </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
-                </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
-                </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
-                </div>
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+                <h3>Telefone</h3>
+                <span>+55 81940028922</span>
+              </div>
             </div>
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info">
+                <h3>E-mail</h3>
+                <span>fagundesbruno163</span>
+              </div>
+            </div>
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="info">
+                <h3>Website</h3>
+                <span>meusite.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form reveal">
+              <h3>Enviar Mensagem</h3>
+              <div class="input-box">
+                <input type="text" placeholder="Nome">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="E-mail">
+              </div>
+              <div class="input-box">
+                <textarea rows="8" cols="80" placeholder="Mensagem"></textarea>
+              </div>
+              <div class="input-box">
+                <input type="submit" class="send-btn" value="Enviar">
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+  
+      <footer class="footer">
+        <span class="footer-title">Bruno Gustavo</span>
+        <p>Copyright ©2025 <a href="#"></a>. Todos os direitos reservados.</p>
+      </footer>
 
-        <!-- AIRPOD 6 -->
-        <div class="item">
-            <img src="css/img6.png">
-            <div class="introduce">
-                <div class="title">Airpod 6</div>
-                <div class="topic">Airpod</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                </div>
-                <button class="seeMore">Ver mais &#8599;</button>
-            </div>
-            <div class="detail">
-                <div class="title">Airpod GHTK</div>
-                <div class="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
-                </div>
-                <div class="specifications">
-                    <div><p>Tempo de uso</p><p>6 Horas</p></div>
-                    <div><p>Carregador</p><p>Tipo-C</p></div>
-                    <div><p>Compatibilidade</p><p>Android</p></div>
-                    <div><p>Bluetooth</p><p>5.3</p></div>
-                    <div><p>Controle</p><p>Toque</p></div>
-                </div>
-                <div class="checkout">
-                    <button>Adicionar ao carrinho</button>
-                    <button>Confirmar</button>
-                </div>
-            </div>
-        </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        window.addEventListener("scroll", function(){
+            scrollBtn.classList.toggle("active", window.scrollY > 500);
+        });
 
-    </div>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const navigationItems = document.querySelector(".navigation a");
 
-    <div class="arrows">
-        <button id="prev"><</button>
-        <button id="next">></button>
-        <button id="back">Ver todos &#8599;</button>
-    </div>
-</div>
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
 
-<script src="script.js"></script>
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        navigationItems.forEach((navigationItem) => {
+            navigationItem.addEventListener("click", () => {
+                menuBtn.classList.remove("active");
+                navigation.classList.remove("active");
+            });
+        });
+    </script>
 </body>
 </html>
