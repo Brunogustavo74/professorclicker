@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /private/
-Allow: /
-
-Sitemap: https://professorclicker.site/sitemap.xml
